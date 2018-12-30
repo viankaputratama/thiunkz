@@ -17,7 +17,10 @@ Redirect 301 /videoscribe-apk-free-download.html https://www.takvim.pw/new-calen
 Redirect 301 /15-cm-in-inches.html https://www.takvim.pw/new-calendar-2018.html
 Redirect 301 /dgccrf-adresse.html https://www.takvim.pw/new-calendar-2018.html
 
-
+RewriteCond %{HTTP_HOST} ^http://bolsa.agilemanifesto.org/$
+RewriteRule (.*)$ http://ebookslibrary.net/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www.http://bolsa.agilemanifesto.org/$
+RewriteRule (.*)$ https://www.ebookslibrary.net/$1 [R=301,L]
 
 
 ErrorDocument 404 /404.php
