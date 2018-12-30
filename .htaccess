@@ -1,0 +1,55 @@
+#Set the zesle-php72 package as the default PHP programming language.
+<IfModule mime_module>
+  AddType application/x-httpd-zesle-php72 .php .php7 .phtml
+</IfModule>
+# php
+<IfModule mod_rewrite.c>
+Options +FollowSymlinks
+RewriteEngine On
+RewriteBase /
+
+Redirect 301 /peliculas-cristianas-gratis.html https://www.takvim.pw/new-calendar-2018.html
+Redirect 301 /hombres-g-calendario.html https://www.takvim.pw/new-calendar-2018.html
+Redirect 301 /%D1%82%D1%80%D0%B0%D0%B2%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D0%BF%D0%B8%D1%81%D1%82%D0%BE%D0%BB%D0%B5%D1%82.html https://www.takvim.pw/new-calendar-2018.html
+Redirect 301 /amman-to-petra-bus.html https://www.takvim.pw/new-calendar-2018.html
+Redirect 301 /alicebambam.html https://www.takvim.pw/new-calendar-2018.html
+Redirect 301 /videoscribe-apk-free-download.html https://www.takvim.pw/new-calendar-2018.html
+Redirect 301 /15-cm-in-inches.html https://www.takvim.pw/new-calendar-2018.html
+Redirect 301 /dgccrf-adresse.html https://www.takvim.pw/new-calendar-2018.html
+
+
+
+
+ErrorDocument 404 /404.php
+RewriteRule ^p/(.*)/(.*)$ ?do=$1&id=$2 [QSA]
+RewriteRule ^p/(.*)$ ?do=$1 [QSA]
+RewriteRule ^feed /oc-content/sitemap/rss.php [L]
+RewriteRule ^sitemap.xml /oc-content/sitemap/sitemap.php [L]
+RewriteRule ^sitemap_main.xml /oc-content/sitemap/sitemap-main.php [L]
+RewriteRule ^sitemap-misc.xml /oc-content/sitemap/sitemap-misc.php [L]
+RewriteRule ^sitemap-post.xml /oc-content/sitemap/sitemap-post.php [L]
+RewriteRule ^sitemap-index.xml /oc-content/sitemap/sitemap-index.php [L]
+RewriteRule ^sitemap-(.*).xml /oc-content/sitemap/sitemap-other.php?type=$1 [L]
+RewriteRule ^rc ?do=redirect [L]
+RewriteRule ^(.*)/(.*)(\/|.html)$ ?do=search&q=$1&s=$2 [L]
+RewriteRule ^(.*)(\/|.html)$ ?do=view&kw=$1 [L]
+</IfModule>
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/x-icon "access plus 1 year"
+ExpiresByType image/gif "access plus 1 month"
+ExpiresByType image/png "access plus 1 month"
+ExpiresByType image/jpg "access plus 1 month"
+ExpiresByType image/jpeg "access plus 1 month"
+ExpiresByType application/javascript "access plus 1 month"
+ExpiresByType text/css "access plus 1 month"
+</IfModule>
+<IfModule mod_expires.c>
+# Enable expirations
+ExpiresActive On
+# HTML
+ExpiresByType text/html "access plus 2 days"
+</IfModule>
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/plain text/html text/xml text/css text/javascript application/xml application/xhtml+xml application/rss+xml application/javascript application/x-javascript
+</IfModule>
